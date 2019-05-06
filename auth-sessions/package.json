@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "demo": "./node_modules/.bin/webpack --config webpack.config.js && node app.js"
+    "demo": "./node_modules/.bin/webpack --config webpack.config.js && node app.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "bojeil-google",
   "license": "Apache License Version 2.0",
@@ -18,6 +20,8 @@
     "firebase": "^4.8.0",
     "firebaseui": "^2.6.3",
     "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13"
-  }
+    "webpack-cli": "^2.0.13",
+    "snyk": "^1.161.1"
+  },
+  "snyk": true
 }
